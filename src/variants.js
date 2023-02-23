@@ -1,8 +1,8 @@
 export const fadeIn = (direction, type, delay, duration) => {
   return {
     hidden: {
-      x: direction === 'left' ? 80 : direction === 'right' ? -80 : 0,
-      y: direction === 'up' ? 80 : direction === 'down' ? -80 : 0,
+      x: direction === "left" ? 80 : direction === "right" ? -80 : 0,
+      y: direction === "up" ? 80 : direction === "down" ? -80 : 0,
       opacity: 0,
     },
     show: {
@@ -13,7 +13,7 @@ export const fadeIn = (direction, type, delay, duration) => {
         type: type,
         delay: delay,
         duration: duration,
-        ease: 'easeOut',
+        ease: "easeOut",
       },
     },
   };
@@ -33,14 +33,14 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
 
 export const plateVariants = {
   hidden: {
-    x: '120%',
+    x: "120%",
     rotate: 120,
   },
   show: {
     x: 0,
     rotate: 0,
     transition: {
-      type: 'spring',
+      type: "spring",
       duration: 1.8,
       delay: 0.5,
     },
